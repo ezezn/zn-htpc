@@ -6,6 +6,7 @@
  **/
 define([
     './background.image.directive',
+    './horizontal.container.directive',
     './resize.directive',
     './icon.directive'
 

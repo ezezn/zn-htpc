@@ -1,7 +1,7 @@
 define(['./module'], function (launcher) {
     'use strict';
 
-    launcher.controller('LauncherCtrl', ['$scope', function ($scope) {
+    launcher.controller('LauncherCtrl', ['$scope', 'navigatorManager', function ($scope, navigatorManager) {
 
       $scope.applicationsInfo = [{
         icon: 'image',
