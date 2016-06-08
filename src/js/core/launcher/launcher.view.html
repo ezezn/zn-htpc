@@ -1,19 +1,18 @@
 <div class="launcher-section-container" ng-controller="LauncherCtrl">
-<div class="horizontal-container">
-    <div class="inner-layout-container" zn-horizontal-container="launcher-menu">
-        <article>
-        	<span class="fa fa-camera-retro fa-lg"></span>
-            <h3>Project Title</h3>
-        </article>
-        <article class="item-shape fx-bob" ng-repeat="app in applicationsInfo track by $index"
-        	ng-style="{
+    <div class="horizontal-container">
+        <div class="inner-layout-container" zn-horizontal-container="launcher-menu">
+            <article zn-navigation-item>
+                <span class="fa fa-camera-retro fa-lg"></span>
+                <h3>Project Title</h3>
+            </article>
+            <article class="item-shape fx-bob" zn-navigation-item ng-repeat="app in applicationsInfo track by $index" ng-style="{
         		'color': app.color,
         		'background-color': app.bgColor
         		}">
-        		<zn-icon icon="{{app.icon}}"></zn-icon>
-            	<span class="title">{{app.title}}</span>
-        </article> 
-        <!-- Repeat this part as many times as necessary. -->
+                <zn-icon icon="{{app.icon}}"></zn-icon>
+                <span class="title">{{app.title}}</span>
+            </article>
+            <!-- Repeat this part as many times as necessary. -->
+        </div>
     </div>
-</div>
 </div>

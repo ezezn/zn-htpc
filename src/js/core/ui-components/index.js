@@ -7,7 +7,8 @@
 define([
     './background.image.directive',
     './horizontal.container.directive',
+    './navigation.item.directive',
     './resize.directive',
     './icon.directive'
 
-], function () {});
+], function() {});

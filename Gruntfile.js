@@ -31,7 +31,7 @@ module.exports = function(grunt) {
             options: {
                 version: nwVer,
                 buildDir: './release', // Where the build version of my NW.js app is saved
-                platforms: ['win32', 'linux64'] // These are the platforms that we want to build
+                platforms: ['win32'] // These are the platforms that we want to build
             },
             src: ['./src/**/*']
         },
