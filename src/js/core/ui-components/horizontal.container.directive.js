@@ -21,6 +21,7 @@ define(['./module'], function(ui) {
                     });
                 }
 
+                var items = element[0].querySelectorAll('.navigation-item');
                 scope.$on('$destroy', function() {
                     navigatorManager.removeContainer(attrs.znHorizontalContainer);
                 });
