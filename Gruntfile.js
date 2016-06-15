@@ -17,8 +17,11 @@ var nwVer = '0.10.0';
 
 var nwExec = "";
 
-if (!isWin)
+if (!isWin) {
     nwExec = "cd cache/" + nwVer + "/" + os + " && ./nw ../../../src";
+} else {
+    nwExec = "cache\\" + nwVer + "\\" + os + "\\nw.exe src";
+}
 module.exports = function(grunt) {
 
     grunt.initConfig({

@@ -216,7 +216,8 @@ a img {
 }
 .fx-bob:hover,
 .fx-bob:focus,
-.fx-bob:active {
+.fx-bob:active,
+.fx-bob.focused {
   -webkit-animation-name: fx-bob-float, fx-bob;
   animation-name: fx-bob-float, fx-bob;
   -webkit-animation-duration: .3s, 1.5s;
