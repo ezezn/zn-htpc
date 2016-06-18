@@ -1,3 +1,4 @@
+@import "apps/launcher";
 body {
 	font-family: circular;
 }
@@ -21,30 +22,4 @@ body {
 	top: 0;
 	left: 0;
 	z-index: 50;
-}
-
-.launcher-section-container {
-	position: absolute;
-	width: 100%;
-	height: 20%;
-	bottom: 5%;
-	left: 0;
-	z-index: 100;
-
-	.horizontal-container {
-		padding-top: 10px;
-	}
-
-	article {
-transition: all 300ms linear;		
-		&:hover,&:focus,&:active {
-			span.icon {
-				font-size: 4em;
-			}
-		}
-	}
-	span.title {
-        display: block;
-        margin-top: 10px;
-    }
 }

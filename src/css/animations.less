@@ -1,30 +1,10 @@
-.slide-animate {
-
-	.ng-enter, 
-	.ng-leave { 
-		-webkit-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-		-moz-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-		-ms-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-		-o-transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-		transition: 300ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
-	} 
- 
-	.ng-enter {
- 	   	left: 100%;
- 	   	&.ng-enter-active {
- 	   		left: 0;
- 	   	}
-	}
- 
-	.ng-leave {
-    	left: 0;
-
-    	&.ng-leave-active {
-    		left: -100%;
-    	}
-	}
+.fx-elevate {
+  -webkit-transition-property: -webkit-transform;
+  transition: all 0.3s ease-in-out;
+  &.focused {
+    -webkit-transform: translate(0,-0.8em);
+  }
 }
-
 
 .fx-grow {
   vertical-align: middle;

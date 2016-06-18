@@ -1,0 +1,48 @@
+.launcher-section-container {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	bottom: 5%;
+	left: 0;
+	z-index: 100;
+
+    .app-tile {
+        width: 100px;
+	    height: 80%;
+        text-align: center;
+        z-index:200;
+        .apply-background-color(@nice-white);
+
+        .content-tile {
+            top:50%;
+            position: relative;
+            -webkit-transform: translateY(-50%);
+            display: block;
+        }
+    }
+    .tile-white {
+            .apply-background-color(@nice-white);
+    }
+    .tile-black {
+            .apply-background-color(@nice-black);
+    }
+    .tile-blue {
+            .apply-background-color(@blue);
+    }
+
+    .tile-red {
+            .apply-background-color(@red);
+    }
+    .tile-green {
+            .apply-background-color(@green);
+    }
+    .tile-orange {
+            .apply-background-color(@orange);
+    }
+    .tile-light-blue {
+            .apply-background-color(@light-blue);
+    }
+    .tile-light-red {
+            .apply-background-color(@light-red);
+    }
+}

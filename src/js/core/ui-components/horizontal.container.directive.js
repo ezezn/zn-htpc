@@ -3,7 +3,7 @@ define(['./module'], function(ui) {
     ui.directive('znHorizontalContainer', ['navigatorManager', function(navigatorManager) {
         return {
             scope: {},
-            restrict: 'A',
+            restrict: 'E',
             controller: function($scope) {
                 var items = [];
 
