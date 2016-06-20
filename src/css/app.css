@@ -130,7 +130,7 @@ a img {
   -webkit-transform: translate(0, 5px);
 }
 .fx-elevate.focused {
-  -webkit-transform: translate(0, -5px);
+  -webkit-transform: translate(0, 0px);
 }
 .fx-grow {
   vertical-align: middle;

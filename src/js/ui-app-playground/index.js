@@ -5,6 +5,7 @@
  * which avails each controller of, for example, the `config` constants object.
  **/
 define([
-    './app.manager',
-    './launcher.controller'
-], function() {});
+    './home.controller',
+    './states'
+
+], function () {});
