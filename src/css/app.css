@@ -127,9 +127,10 @@ a img {
 .fx-elevate {
   -webkit-transition-property: -webkit-transform;
   transition: all 0.3s ease-in-out;
+  -webkit-transform: translate(0, 5px);
 }
 .fx-elevate.focused {
-  -webkit-transform: translate(0, -0.8em);
+  -webkit-transform: translate(0, -5px);
 }
 .fx-grow {
   vertical-align: middle;
@@ -235,7 +236,8 @@ zn-horizontal-container {
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 zn-horizontal-container .navigation-item {
   flex: 0 0 auto;
@@ -254,9 +256,8 @@ zn-horizontal-container .navigation-item {
 }
 .launcher-section-container .app-tile {
   width: 100px;
-  height: 80%;
+  height: 75%;
   text-align: center;
-  z-index: 200;
   color: #303030;
   background-color: #fffefc;
 }
