@@ -1,24 +1,5 @@
 {
-    "main": "index.html",
+    "main": "main.js",
     "name": "zn-htpc",
-    "description": "demo app of NW.js",
-    "version": "0.1.0",
-    "keywords": ["demo", "NW.js"],
-    "window": {
-        "title": "Zn HTPC Codename PIA",
-        "icon": "link.png",
-        "toolbar": true,
-        "frame": true,
-        "width": 800,
-        "height": 600,
-        "position": "center",
-        "min_width": 800,
-        "min_height": 600,
-        "max_width": 800,
-        "max_height": 600
-    },
-    "webkit": {
-        "plugin": true
-    },
-    "chromium-args": "--enable-threaded-compositing"
+    "version": "0.1.0"
 }

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/app.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+
+<title>ZN HTPC</title>
+</head>
+<body zn-navigator>
+	<div ui-view></div>
+	<ng-include src="'js/core/background/background.view.html'"></ng-include>
+	<ng-include src="'js/core/launcher/launcher.view.html'"></ng-include>
+
+	<script src="lib/requirejs/require.js" data-main="js/main.js"></script>
+</body>
+</html>	

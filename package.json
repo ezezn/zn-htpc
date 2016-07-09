@@ -8,7 +8,7 @@
     },
     "keywords": [
         "htpc",
-        "nwjs",
+        "electron-shell",
         "angularjs"
     ],
     "author": "Ezequiel Zink",
@@ -17,8 +17,7 @@
         "grunt": "^0.4.5",
         "grunt-contrib-clean": "^0.4.0",
         "grunt-contrib-less": "^1.3.0",
-        "grunt-nw-builder": "^2.0.0",
-        "grunt-shell": "^1.3.0",
-        "grunt-patch": "^0.1.7"
+        "grunt-electron-app-builder": "^0.1.0",
+        "grunt-shell": "^1.3.0"
     }
 }

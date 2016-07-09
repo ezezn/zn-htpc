@@ -1,0 +1,15 @@
+{
+    "main": "launcher.js",
+    "name": "zn-htpc",
+    "description": "demo app of NW.js",
+    "version": "0.1.0",
+    "keywords": ["demo", "NW.js"],
+    "window": {
+        "title": "Zn HTPC Codename PIA",
+        "icon": "link.png"
+    },
+    "webkit": {
+        "plugin": true
+    },
+    "chromium-args": "--enable-threaded-compositing"
+}

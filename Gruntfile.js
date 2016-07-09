@@ -18,9 +18,9 @@ var nwVer = '0.10.0';
 var nwExec = "";
 
 if (!isWin) {
-    nwExec = "cd cache/" + nwVer + "/" + os + " && ./nw ../../../src";
+    nwExec = "cd release/" + os + "/ && ./electron ../../src";
 } else {
-    nwExec = "cache\\" + nwVer + "\\" + os + "\\nw.exe src";
+    nwExec = "release\\" + os + "\\electron.exe src";
 }
 module.exports = function(grunt) {
 
@@ -37,6 +37,13 @@ module.exports = function(grunt) {
                 platforms: ['win32'] // These are the platforms that we want to build
             },
             src: ['./src/**/*']
+        },
+        'build-electron-app': {
+            options: {
+                build_dir: './release',
+                platforms: ['win32', 'linux32', 'linux64'],
+                app_dir: './src'
+            }
         },
         clean: ["./releases/**/*"],
         shell: {
@@ -66,14 +73,14 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-nw-builder');
+    grunt.loadNpmTasks('grunt-electron-app-builder');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask('default', ['less', 'shell:run']);
     grunt.registerTask('run', ['default']);
-    grunt.registerTask('install', ['shell:install', 'nwjs']);
-    grunt.registerTask('build', ['less', 'nwjs']);
+    grunt.registerTask('install', ['shell:install', 'build-electron-app']);
+    grunt.registerTask('build', ['less', 'build-electron-app']);
 
 
 };
