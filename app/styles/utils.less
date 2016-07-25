@@ -1,0 +1,21 @@
+/*** Center and alignment utils ***/
+.vertical-align(@position: relative) {
+    position: @position;
+    top: 50%;
+    -webkit-transform: perspective(1px) translateY(-50%);
+    -ms-transform: perspective(1px) translateY(-50%);
+    transform: perspective(1px) translateY(-50%);
+}
+
+/*** Color application utils ***/
+.apply-background-color (@a) when (lightness(@a) >= 50%) {   
+  color: @nice-black;
+}
+
+.apply-background-color (@a) when (lightness(@a) < 50%) {
+  color: @nice-white;
+}
+
+.apply-background-color (@a) { // this is always included
+  background-color: @a;
+}
